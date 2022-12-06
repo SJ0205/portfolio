@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화평동왕냉면</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="normal-nav">
+        <div class="wrap">
+            <i class='bx bx-menu'></i>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="link-total">
+                    <li class="main-link"><a class="slide-nav-link-d" href="brand.html">화평동 소개<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="brand.html">브랜드소개</a></li>
+                            <li><a href="brand.html#map">찾아오는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="menu.html">메뉴<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="menu.html#menu-naengmyeon">냉면류</a></li>
+                            <li><a href="menu.html#menu-rib">갈비류</a></li>
+                            <li><a href="menu.html#menu-meal">식사류</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a href="store.html">매장안내</a>
+                        <ul class="sub-link" style="display: none"></ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="business.html">창업안내<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="business.html#business-cost">창업비용</a></li>
+                            <li><a href="business.html#business-process">창업절차</a></li>
+                            <li><a href="business.html#business-ask">창업안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="main-slide" class="section-first">
+            <div class="slide-box">
+                <span class="arrow" id="prev">&lt;</span>
+                <span class="arrow" id="next">&gt;</span>
+                <div class="slide-dots-box">
+                    <span class="slide-dot on"></span>
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
+                </div>
+                <div class="slide slide-1">
+                    <p>
+                        갈비 냉면 시장 최초로 성공하여<br>
+                        우리동네 No.1 브랜드로 자리매김한 <span class="point">화평동</span><br>
+                        오래가고 강한 장수 브랜드로 고객님 곁에 항상 함께하겠습니다
+                    </p>
+                </div>
+                <div class="slide slide-2">
+                </div>
+                <div class="slide slide-3">
+                </div>
+            </div>
+        </section>
+        <section id="main-menu" class="wrap">
+            <h1 class="sub-title point">메인메뉴</h1>
+            <article class="menu-box">
+                <div class="menu menu-1" onclick="location.href='menu.html'">
+                    <div class="menu-hover-text flex-col">
+                        <h2>왕냉면</h2>
+                        <p>모두가 사랑하는 스테디셀러</p>
+                    </div>
+                </div>
+                <div class="menu menu-2" onclick="location.href='menu.html#menu-2'">
+                    <div class="menu-hover-text flex-col">
+                        <h2>황제갈비</h2>
+                        <p>화평동만의 양념으로 맛을 낸 국내산 갈비</p>
+                    </div>
+                </div>
+                <div class="menu menu-3" onclick="location.href='menu.html#menu-3'">
+                    <div class="menu-hover-text flex-col">
+                        <h2>갈비탕</h2>
+                        <p>화평동만의 별미 한 끼 식사</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="main-store" class="wrap">
+            <h1 class="sub-title point">가맹점</h1>
+            <article class="store-box">
+                <div class="store-main">
+                    <div class="store-text flex-col">
+                        <h2>집근처 화평동 우수가맹점들을 만나보세요</h2>
+                    </div>
+                </div>
+                <div class="store" onclick="location.href='store.html'">
+                    <div class="store-img"></div>
+                    <div class="store-text flex-col">
+                        <h3>우수가맹점</h3>
+                        <h2 class="point">안산점</h2>
+                        <p>경기도 안산시 단원구 와동1로 47-1</p>
+                        <p>TEL : 031-480-6136</p>
+                    </div>
+                </div>
+                <div class="store" onclick="location.href='store.html'">
+                    <div class="store-img"></div>
+                    <div class="store-text flex-col">
+                        <h3>우수가맹점</h3>
+                        <h2 class="point">ㅁㅁ점</h2>
+                        <p>경기도 안산시 단원구 와동1로 47-1</p>
+                        <p>TEL : 00-000-0000</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <span class="content-back-pattern-top"></span>
+        <span class="content-back-pattern-bottom"></span>
+    </main>
+    <footer>
+        <div class="footer-box wrap">
+            <h1><img src="img/foot_logo.png" alt="foot_logo"></h1>
+            <p class="footer-txt small">주소 : 서울시 동대문구 장한로 37 2~3층<br>사업자등록번호 : 220-87-13681<br>TEL : 1588-6020 | FAX :
+                02-466-9200<br>copyright 2005 ⓒ HAPPY BRIDGE ALL RIGHTS RESERVED</p>
+            <p class="footer-sns">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-twitter'></i>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+/*
+    ------------------menu START----------------------
+*/
+
+#menu .content-article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+#menu .menu-common {
+    display: flex;
+    flex-flow: column;
+    height: 400px;
+    padding: 2em 3em;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+#menu .menu-common img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+#menu .menu-common .menu-text {
+    width: 100%;
+    height: calc(100% - 200px);
+}
+
+#menu-naengmyeon>div,
+#menu-rib>div,
+#menu-meal>div {
+    width: 30%;
+    height: 100%;
+}
+
+.menu-rib>div {
+    margin-bottom: 2em;
+}
+
+#menu .menu-rib {
+    flex-wrap: wrap;
+}
+
+/*
+    ------------------menu END----------------------
+*/
+
+/*
+    ------------------media query START----------------------
+*/
+
+@media (max-width:1300px) {
+}
+
+@media (max-width:1200px) {
+    /*media query menu*/
+    #menu .menu-common img {
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:1080px) {
+}
+
+@media (max-width:1024px) {
+}
+
+@media (max-width:850px) {
+    /*slide nav 사용*/
+    /*media query menu*/
+    #menu .menu-common {
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        padding: 1em 2em;
+        margin-bottom: 1em;
+    }
+
+    #menu .menu-common img {
+        width: 30%;
+        height: 100%;
+    }
+
+    #menu .menu-common .menu-text {
+        width: 70%;
+        height: 100%;
+        padding: 1em;
+    }
+
+}
+
+@media (max-width:768px) {
+}
+
+@media (max-width:650px) {
+    /*media query menu*/
+    .brand-product-text ul {
+        width: auto;
+    }
+}
+
+@media (max-width:500px) {
+    /*media query menu*/
+    #menu .menu-common {
+        flex-flow: column;
+        height: 400px;
+    }
+
+    #menu .menu-common img {
+        width: 100%;
+        height: 50%;
+        padding: 2em;
+    }
+
+    #menu .menu-common .menu-text {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+}
+
+/*
+    ------------------media query END----------------------
+*/
+
+
+/*media query 공통부분*/
+/*media query index*/
+/*media query brand*/
+/*media query menu*/
+/*media query store*/
+/*media query business*/

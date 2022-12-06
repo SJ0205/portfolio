@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화평동왕냉면</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="normal-nav">
+        <div class="wrap">
+            <i class='bx bx-menu'></i>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="link-total">
+                    <li class="main-link"><a class="slide-nav-link-d" href="brand.html">화평동 소개<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="brand.html">브랜드소개</a></li>
+                            <li><a href="brand.html#map">찾아오는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="menu.html">메뉴<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="menu.html#menu-naengmyeon">냉면류</a></li>
+                            <li><a href="menu.html#menu-rib">갈비류</a></li>
+                            <li><a href="menu.html#menu-meal">식사류</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a href="store.html">매장안내</a>
+                        <ul class="sub-link" style="display: none"></ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="business.html">창업안내<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="business.html#business-cost">창업비용</a></li>
+                            <li><a href="business.html#business-process">창업절차</a></li>
+                            <li><a href="business.html#business-ask">창업안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="normal-nav">
+        <div class="wrap">
+            <i class='bx bx-menu'></i>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="link-total">
+                    <li class="main-link"><a class="slide-nav-link-d" href="brand.html">화평동 소개<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="brand.html">브랜드소개</a></li>
+                            <li><a href="brand.html#map">찾아오는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="menu.html">메뉴<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="menu.html#menu-naengmyeon">냉면류</a></li>
+                            <li><a href="menu.html#menu-rib">갈비류</a></li>
+                            <li><a href="menu.html#menu-meal">식사류</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a href="store.html">매장안내</a>
+                        <ul class="sub-link" style="display: none"></ul>
+                    </li>
+                    <li class="main-link"><a class="slide-nav-link-d" href="business.html">창업안내<i
+                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                        <ul class="sub-link">
+                            <li><a href="business.html#business-cost">창업비용</a></li>
+                            <li><a href="business.html#business-process">창업절차</a></li>
+                            <li><a href="business.html#business-ask">창업안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="content-article wrap">
+            <h1 class="content-title content-title-back">화평동 매장찾기</h1>
+            <div class="store-search">
+                <select name="시/도" id="sido">
+                    <option value="sido1" selected>서울특별시</option>
+                    <option value="sido2">부산광역시</option>
+                    <option value="sido3">대구광역시</option>
+                    <option value="sido4">인천광역시</option>
+                    <option value="sido5">광주광역시</option>
+                    <option value="sido6">대전광역시</option>
+                    <option value="sido7">울산광역시</option>
+                    <option value="sido8">세종특별자치시</option>
+                    <option value="sido9">경기도</option>
+                    <option value="sido10">강원도</option>
+                    <option value="sido11">충청도</option>
+                    <option value="sido12">전라도</option>
+                    <option value="sido13">경상도</option>
+                    <option value="sido14">제주특별자치도</option>
+                </select>
+                <button>검색</button>
+            </div>
+            <div class="store-map">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5962079875076!2d127.06422071485677!3d37.56457617979829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbb347bbce827%3A0x3bf3cc9bead6a1f0!2z7ISc7Jq47Yq567OE7IucIOuPmeuMgOusuOq1rCDsnqXslYjrj5kg7J6l7ZWc66GcIDM3!5e0!3m2!1sko!2skr!4v1602032519649!5m2!1sko!2skr"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="map-sub">
+                    <h3>전체지역의 <span class="point">0개</span>의 매장이 검색되었습니다</h3>
+                    <ul class="store-list-total">
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                        <li class="store-list">
+                            <img src="img/store.jpg" alt="store">
+                            <div class="store-list-text">
+                                <h3 class="point">ㅇㅇ점</h3>
+                                <p>주소 : 서울시 ㅇㅇ동 00-0<br>전화번호 : 02-0000-0000<br>영업시간 : 11:00 ~ 22:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-box wrap">
+            <h1><img src="img/foot_logo.png" alt="foot_logo"></h1>
+            <p class="footer-txt small">주소 : 서울시 동대문구 장한로 37 2~3층<br>사업자등록번호 : 220-87-13681<br>TEL : 1588-6020 | FAX :
+                02-466-9200<br>copyright 2005 ⓒ HAPPY BRIDGE ALL RIGHTS RESERVED</p>
+            <p class="footer-sns">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-twitter'></i>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

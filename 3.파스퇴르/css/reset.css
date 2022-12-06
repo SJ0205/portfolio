@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	word-break: keep-all;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: white;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+@font-face {
+	font-family: "Dangdanghae";
+	src: url(../font/Cafe24Dangdanghae.woff) format('woff'),
+		url(../font/Cafe24Dangdanghae.ttf) format('truetype');
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Dangdanghae", sans-serif;
+}
+
+#menu li a {
+	font-family: "Dangdanghae", sans-serif;
+}
+
+::selection {
+	background: rgba(5, 164, 71, 0.7);
+	color: white;
+}

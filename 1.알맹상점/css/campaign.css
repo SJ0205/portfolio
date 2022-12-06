@@ -1,0 +1,388 @@
+
+/*-------------------------------------ongoing Start*/
+
+.ongoing-campaign-section{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.ongoing-campaign-section h1{
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.ongoing-campaign-section h1 span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	background: url(../img/pebble_icon.png);
+	animation: starani 5s infinite alternate;
+}
+
+@keyframes starani {
+	0% {
+		transform: rotate(0)
+	}
+
+	50% {
+		transform: rotate(45deg)
+	}
+
+	100% {
+		transform: rotate(-45deg)
+	}
+}
+
+.ongoing-campaigns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 600px;
+}
+
+.ongoing-campaign{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.ongoing-campaign:hover .campaign-detail{
+    top: 0;
+}
+
+.ongoing-campaign h2{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: fit-content; height: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0px 0px 3px var(--basic);
+    background-color: rgba(112, 191, 231, 0.8);
+}
+
+.ongoing-campaign .campaign-detail{
+    position: absolute;
+    top: 100%; bottom:0; right: 0; left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    word-break: keep-all;
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.3s ease;
+}
+
+
+.ongoing-campaign .campaign-detail p{
+    font-size: 16px;
+}
+
+.ongoing-campaign .campaign-detail .point-text{
+    color: var(--red);
+    font-weight: bold;
+}
+
+.ongoing-campaign .campaign-detail a{
+    width: 300px;
+    padding: 0.5em;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--blue);
+    color: #000;
+}
+
+.ongoing-campaign-1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background: url(../img/cam-img-1.jpg);
+    background-size: cover;
+}
+
+.ongoing-campaign-2{
+    position: relative;
+    background: url(../img/cam-img-2.jpg) center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.ongoing-campaign-3{
+    position: relative;
+    background: url(../img/cam-img-3.jpg) center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------ongoing End*/
+
+/*-------------------------------------finished Start*/
+
+.finished-campaign-section{
+    width: 100%;
+    height: fit-content;
+}
+
+.finished-campaign-section h1{
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.finished-campaign-section h1 span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	background: url(../img/new_icon.png);
+	animation: starani 5s infinite alternate;
+}
+
+@keyframes starani {
+	0% {
+		transform: rotate(0)
+	}
+
+	50% {
+		transform: rotate(45deg)
+	}
+
+	100% {
+		transform: rotate(-45deg)
+	}
+}
+
+.finished-campaigns{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.finished-campaign{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 600px;
+}
+
+.finished-campaign-img{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.finished-campaign-img .tag-img{
+    position: absolute;
+    top: 30px; left: 40px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 220px;
+    color: #fff;
+    background: url(../img/cam-finished-tag.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: tagAni 5s infinite alternate;
+}
+
+@keyframes tagAni {
+    0%{rotate: 10deg;}
+    100%{rotate: -10deg;}
+}
+
+.finished-campaign-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+
+.finished-campaign-text h2{
+    color: var(--red);
+}
+
+.finished-campaign-text .detail-btn{
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    padding: 0.5em;
+    margin-top: 1em;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.finished-campaign-text .detail-btn::before{
+    content: "";
+    position: absolute;
+    left: -2px; top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(to right, var(--red) 0%, var(--yellow) 50%, var(--blue)100%);
+    background-size: 400%;
+    border-radius: 12px;
+    z-index: -1;
+    animation: bgAni 5s ease alternate infinite;
+}
+
+
+@keyframes bgAni{
+    0%{
+        background-position: 0%, 0%;
+    }
+    50%{
+        background-position: 100%, -100%;
+        color: var(--basic);
+    }
+    100%{
+        background-position: 0%, 0%;
+    }
+}
+
+
+
+.finished-campaign-text .readable-text{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.finished-campaign-1 .finished-campaign-img{
+    background: url(../img/cam-finished-banner-1.jpg) center center rgb(252,225,216);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.finished-campaign-2{
+    flex-direction: row-reverse;
+}
+
+.finished-campaign-2 .finished-campaign-img{
+    background: url(../img/cam-finished-banner-2.jpg) center center #e5e5e5;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.finished-campaign-2 .finished-campaign-img .tag-img{
+    left: unset; right: 40px;
+}
+
+.finished-campaign-2 .finished-campaign-text{
+    text-align: right;
+}
+
+.finished-campaign-2 .finished-campaign-text a{
+    margin-left: auto;
+}
+
+
+.finished-campaign-3 .finished-campaign-img{
+    position: relative;
+    background: url(../img/cam-finished-banner-3.jpg) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.finished-campaign-3 .finished-campaign-img::before{
+    content:"";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/cam-finished-banner-3.jpg) left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px) grayscale(0.77);
+    z-index: -1;
+}
+
+/*-------------------------------------finished End*/
+
+@media (max-width: 1300px){
+    .finished-campaign-img .tag-img{
+        width: 150px;
+        height: 200px;
+        line-height: 150px;
+    }
+}
+
+
+@media (max-width: 950px){
+
+    .ongoing-campaigns{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 150vh;
+    }
+
+    .ongoing-campaign{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ongoing-campaign-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-position: top center;
+    }
+
+    .ongoing-campaign-2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .ongoing-campaign-3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+
+    .finished-campaign{
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .finished-campaign-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .finished-campaign-text{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .finished-campaign-text .detail-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .finished-campaign-2 .finished-campaign-text{
+        text-align: center;
+    }
+
+}

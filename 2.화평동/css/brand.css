@@ -1,0 +1,512 @@
+
+/*
+    ------------------brand START----------------------
+*/
+#brand {
+    text-align: center;
+}
+
+/*brand story*/
+.brand-story {
+    width: 100%;
+    height: auto;
+}
+
+.brand-story-box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../img/sub1_txt_bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.brand-story-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+.brand-story-text img {
+    width: 80%;
+    max-width: 450px;
+    margin: 20px 0;
+}
+
+.brand-story-text p {
+    width: 100%;
+    word-break: keep-all;
+    line-height: 2em;
+    color: #fff;
+}
+
+/*brand product*/
+.brand-product {
+    height: auto;
+}
+
+.brand-product-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.brand-product-1,
+.brand-product-2 {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px 10px 50px 10px;
+    box-shadow: 0px 0px 5px gray;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.brand-product-1:hover,
+.brand-product-2:hover {
+    box-shadow: 0px 0px 10px gray;
+}
+
+.brand-product-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.brand-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-product-text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    z-index: 5;
+    transition: all 0.5s ease;
+}
+
+.brand-product-1:hover .brand-product-text,
+.brand-product-2:hover .brand-product-text {
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+
+
+.brand-product-text h2 {
+    margin-bottom: 1em;
+}
+
+.brand-product-text ul {
+    width: 100%;
+    line-height: 2em;
+}
+
+.brand-product-text ul li {
+    width: 77%;
+    min-width: 325px;
+    margin: auto;
+    text-align: left;
+    color: var(--b-main-text);
+}
+
+.brand-product-text ul li .bx-check-circle {
+    margin-right: 1em;
+    color: var(--b-main-text);
+}
+
+/*brand slogan, bi*/
+#bi h2 {
+    width: 100%;
+}
+
+/* #bi>div{
+    background: var(--white);
+} */
+
+.brand-slogan-box {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.brand-slogan {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 2em;
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.brand-slogan img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.brand-slogan p {
+    width: 70%;
+    margin: auto;
+    word-break: keep-all;
+}
+
+.brand-bi-box {
+    width: 100%;
+    height: auto;
+}
+
+.brand-bi-1,
+.brand-bi-2 {
+    position: relative;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    /* padding: 20px 0; */
+}
+
+.brand-bi-1 {
+    margin-bottom: 1em;
+}
+
+.brand-bi-img {
+    width: 20%;
+    text-align: right;
+}
+
+.brand-bi-img img {
+    width: 100px;
+}
+
+.brand-bi-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+    word-break: keep-all;
+}
+
+.brand-bi-text p {
+    width: 80%;
+}
+
+
+.bxs-quote-alt-left {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    z-index: -1;
+    font-size: 4em;
+}
+
+.brand-bi-1 .bxs-quote-alt-left {
+    color: var(--yellow)
+}
+
+.brand-bi-2 .bxs-quote-alt-left {
+    color: var(--orange)
+}
+
+.brand-bi-1 .brand-bi-text:before,
+.brand-bi-2 .brand-bi-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    border-radius: 20px;
+    z-index: -1;
+    border: 1px solid transparent;
+    background-image: linear-gradient(var(--white), var(--white)),
+        linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0%, orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+/*map*/
+#map {
+    height: auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.map-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+/*
+    ------------------brand END----------------------
+*/
+
+/*
+    ------------------media query START----------------------
+*/
+
+@media (max-width:1300px) {
+}
+
+@media (max-width:1200px) {
+    /*media query brand*/
+    .brand-bi-img {
+        width: 20%;
+        text-align: center;
+    }
+
+    .brand-bi-text {
+        width: 80%;
+    }
+
+    .brand-bi-text p {
+        width: 70%;
+    }
+}
+
+@media (max-width:1080px) {
+}
+
+@media (max-width:1024px) {
+    /*media query brand*/
+    .brand-product {
+        height: auto;
+    }
+
+    .brand-product-box {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 90vh;
+        align-content: space-between;
+    }
+
+    .brand-product-1,
+    .brand-product-2 {
+        width: 100%;
+        height: 48%;
+    }
+
+    .brand-product-1:hover,
+    .brand-product-2:hover {
+        box-shadow: 0px 0px 5px gray;
+    }
+
+    .brand-product-img {
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .brand-product-text {
+        bottom: 0;
+        right: 0;
+        margin-left: auto;
+        width: 50%;
+        height: 100%;
+        padding-left: 2em;
+        padding-right: 5em;
+        border-radius: 0px 0px 0px 0px;
+        background: var(--black-background);
+        z-index: 10;
+    }
+
+    .brand-product-text h2 {
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    .brand-product-text ul {
+        line-height: 2em;
+    }
+
+    .brand-product-text ul li .bx-check-circle {
+        margin-right: 1em;
+    }
+
+}
+
+@media (max-width:850px) {
+    /*slide nav 사용*/
+    /*media query brand*/
+    .brand-product-box {
+        height: 150vh;
+    }
+
+    .brand-product-img {
+        width: 100%;
+        height: 60%;
+    }
+
+    .brand-product-text {
+        width: 100%;
+        height: 40%;
+        bottom: 0;
+        margin-top: auto;
+        padding-top: 2em;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    .brand-product-text ul {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brand-product-text ul li {
+        width: auto;
+    }
+
+    .brand-product-text h2 {
+        text-align: center;
+    }
+
+    .brand-bi-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .brand-bi-1,
+    .brand-bi-2 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+        padding: 1em;
+        background: rgba(255, 255, 255, 0.5) !important;
+        border-radius: 10px 10px 50px 10px;
+    }
+
+    .brand-bi-img {
+        width: 100%;
+        max-height: 100px;
+        object-fit: contain;
+    }
+
+    .brand-bi-text {
+        width: 85%;
+        height: auto;
+        margin: 0;
+        padding: 1em;
+        background: none;
+    }
+
+    .brand-bi-text p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2em;
+    }
+
+    .bxs-quote-alt-left {
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        z-index: -1;
+        font-size: 4em;
+    }
+
+    .brand-bi-1 .bxs-quote-alt-left {
+        color: var(--yellow)
+    }
+
+    .brand-bi-2 .bxs-quote-alt-left {
+        color: var(--orange)
+    }
+
+    .brand-bi-1:before,
+    .brand-bi-2:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px 10px 50px 10px;
+        z-index: -1;
+        border: 1px solid transparent;
+        background-image: linear-gradient(var(--white-background), var(--white-background)),
+            linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0%, orange 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+
+    .brand-bi-1 .brand-bi-text:before,
+    .brand-bi-2 .brand-bi-text:before {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        height: 90%;
+        margin: auto;
+        border-radius: 20px;
+        z-index: -1;
+        border: 1px solid transparent;
+        background-image: linear-gradient(var(--white-background), var(--white-background)),
+            linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0%, orange 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+}
+
+@media (max-width:768px) {
+}
+
+@media (max-width:650px) {
+
+    /*media query business*/
+    .table-total {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:500px) {
+}
+
+/*
+    ------------------media query END----------------------
+*/
+
+
+/*media query 공통부분*/
+/*media query index*/
+/*media query brand*/
+/*media query menu*/
+/*media query store*/
+/*media query business*/
