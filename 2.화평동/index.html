@@ -8,132 +8,191 @@
     <title>화평동왕냉면</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header class="normal-nav">
-        <div class="wrap">
-            <i class='bx bx-menu'></i>
+    <header> 
+        <div class="nav-box wrap">
+            <i class='bx bx-menu menu-icon active'></i>
+            <i class='bx bx-x menu-x-icon'></i>
             <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
             <nav>
                 <ul class="link-total">
-                    <li class="main-link"><a class="slide-nav-link-d" href="brand.html">화평동 소개<i
-                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                    <li class="main-link">
+                        <a class="slide-nav-link-d" href="brand.html">화평동 소개
+                            <i class='bx bx-down-arrow-alt menu-arrow'></i>
+                        </a>
                         <ul class="sub-link">
                             <li><a href="brand.html">브랜드소개</a></li>
                             <li><a href="brand.html#map">찾아오는 길</a></li>
                         </ul>
                     </li>
                     <li class="main-link"><a class="slide-nav-link-d" href="menu.html">메뉴<i
-                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                                class='bx bx-down-arrow-alt menu-arrow'></i></a>
                         <ul class="sub-link">
-                            <li><a href="menu.html#menu-naengmyeon">냉면류</a></li>
-                            <li><a href="menu.html#menu-rib">갈비류</a></li>
-                            <li><a href="menu.html#menu-meal">식사류</a></li>
+                            <li><a href="menu.html">냉면류</a></li>
+                            <li><a href="menu.html#menu-2">갈비류</a></li>
+                            <li><a href="menu.html#menu-3">식사류</a></li>
                         </ul>
                     </li>
-                    <li class="main-link"><a href="store.html">매장안내</a>
+                    <li class="main-link"><a href="store.html">매장안내<i class='bx bx-down-arrow-alt menu-arrow' style="display:none"></i></a>
                         <ul class="sub-link" style="display: none"></ul>
                     </li>
                     <li class="main-link"><a class="slide-nav-link-d" href="business.html">창업안내<i
-                                class='bx bx-down-arrow-alt slide-nav-arrow'></i></a>
+                                class='bx bx-down-arrow-alt menu-arrow'></i></a>
                         <ul class="sub-link">
-                            <li><a href="business.html#business-cost">창업비용</a></li>
-                            <li><a href="business.html#business-process">창업절차</a></li>
-                            <li><a href="business.html#business-ask">창업안내</a></li>
+                            <li><a href="business.html#cost">창업비용</a></li>
+                            <li><a href="business.html#process">창업절차</a></li>
+                            <li><a href="business.html#inquiry">창업안내</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="main-slide" class="section-first">
+
+        <section id="main-slide">
             <div class="slide-box">
-                <span class="arrow" id="prev">&lt;</span>
-                <span class="arrow" id="next">&gt;</span>
-                <div class="slide-dots-box">
-                    <span class="slide-dot on"></span>
-                    <span class="slide-dot"></span>
-                    <span class="slide-dot"></span>
-                </div>
-                <div class="slide slide-1">
-                    <p>
+                <div class="slide slide-1 active">
+                    <p class="slide-text">
                         갈비 냉면 시장 최초로 성공하여<br>
-                        우리동네 No.1 브랜드로 자리매김한 <span class="point">화평동</span><br>
-                        오래가고 강한 장수 브랜드로 고객님 곁에 항상 함께하겠습니다
+                        우리동네 No.1 브랜드로 자리매김한 <span class="point">화평동</span>
+                        오래가고 강한 장수 브랜드로
+                        고객님 곁에 항상 함께하겠습니다
                     </p>
                 </div>
                 <div class="slide slide-2">
+                    <p class="slide-text">
+                        <span class="point">물냉면</span><br>
+                        모두가 사랑하는 화평동 스테디셀러
+                    </p>
                 </div>
                 <div class="slide slide-3">
+                    <p class="slide-text">
+                        <p class="slide-text">
+                            <span class="point">황제갈비</span><br>
+                            화평동만의 양념으로 맛을 낸 황제갈비
+                        </p>
+                    </p>
                 </div>
+                <div class="slide-pagers">
+                    <span class="slide-pager active" onclick="slidePagerAni(1);"></span>
+                    <span class="slide-pager" onclick="slidePagerAni(2);"></span>
+                    <span class="slide-pager" onclick="slidePagerAni(3);"></span>
+                </div>
+                <button class="slide-arrow" id="slide-arrow-prev" onclick="slideArrowAni(-1)">&lt;</button>
+                <button class="slide-arrow" id="slide-arrow-next" onclick="slideArrowAni(1)">&gt;</button>
             </div>
         </section>
-        <section id="main-menu" class="wrap">
-            <h1 class="sub-title point">메인메뉴</h1>
-            <article class="menu-box">
-                <div class="menu menu-1" onclick="location.href='menu.html'">
-                    <div class="menu-hover-text flex-col">
-                        <h2>왕냉면</h2>
-                        <p>모두가 사랑하는 스테디셀러</p>
+
+        <section id="main-menu">
+            <div class="wrap">
+                <h1 class="sub-title point">화평동 메뉴</h1>
+                <article class="menu-box">
+                    <div class="menu menu-1">
+                        <div class="menu-img"></div>
+                        <div class="menu-hover-text flex-col">
+                            <h2>왕냉면</h2>
+                            <p>모두가 사랑하는 스테디셀러</p>
+                            <a href="menu.html" class="menu-button">더보기</a>
+                        </div>
                     </div>
-                </div>
-                <div class="menu menu-2" onclick="location.href='menu.html#menu-2'">
-                    <div class="menu-hover-text flex-col">
-                        <h2>황제갈비</h2>
-                        <p>화평동만의 양념으로 맛을 낸 국내산 갈비</p>
+                    <div class="menu menu-2">
+                        <div class="menu-img"></div>
+                        <div class="menu-hover-text flex-col">
+                            <h2>황제갈비</h2>
+                            <p>화평동만의 양념으로 맛을 낸 국내산 갈비</p>
+                            <a href="menu.html#menu-2" class="menu-button">더보기</a>
+                        </div>
                     </div>
-                </div>
-                <div class="menu menu-3" onclick="location.href='menu.html#menu-3'">
-                    <div class="menu-hover-text flex-col">
-                        <h2>갈비탕</h2>
-                        <p>화평동만의 별미 한 끼 식사</p>
+                    <div class="menu menu-3">
+                        <div class="menu-img"></div>
+                        <div class="menu-hover-text flex-col">
+                            <h2>갈비탕</h2>
+                            <p>화평동만의 별미 한 끼 식사</p>
+                            <a href="menu.html#menu-3" class="menu-button">더보기</a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
+
         </section>
-        <section id="main-store" class="wrap">
-            <h1 class="sub-title point">가맹점</h1>
-            <article class="store-box">
-                <div class="store-main">
-                    <div class="store-text flex-col">
-                        <h2>집근처 화평동 우수가맹점들을 만나보세요</h2>
+        <section id="main-store-business">
+            <div class="wrap">
+                <article class="store-box">
+                    <h1 class="sub-title point">화평동 매장</h1>
+                    <div class="store-content-wrap">
+                        <div class="store-img"></div>
+                        <div class="store-text flex-col">
+                            <h3>우수가맹점</h3>
+                            <h2 class="point">안산점</h2>
+                            <p><i class='bx bx-map store-icon'></i>경기도 안산시 단원구 와동1로 47</p>
+                            <p><i class='bx bx-phone store-icon'></i>031-480-6136</p>
+                            <a href="store.html" class="store-business-button">매장찾기</a>
+                        </div>
                     </div>
-                </div>
-                <div class="store" onclick="location.href='store.html'">
-                    <div class="store-img"></div>
-                    <div class="store-text flex-col">
-                        <h3>우수가맹점</h3>
-                        <h2 class="point">안산점</h2>
-                        <p>경기도 안산시 단원구 와동1로 47-1</p>
-                        <p>TEL : 031-480-6136</p>
+                </article>
+                <article class="business-box">
+                    <h1 class="sub-title point">창업안내</h1>
+                    <div class="business-text flex-col">
+                        <h3>체계적인 창업 프로세스로 안정적인 창업을 지원합니다</h3>
+                        <ol>
+                            <li>
+                                <i class='bx bx-phone-call business-text-icon'></i>
+                                창업 상담
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-briefcase-alt-2 business-text-icon' ></i>
+                                상권 조사
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-file business-text-icon' ></i>
+                                점포 선정
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-money-withdraw business-text-icon' ></i>
+                                인테리어 예가 산정
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-edit-alt business-text-icon' ></i>
+                                점포, 가맹계약
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-brush-alt business-text-icon'></i>
+                                인테리어 착공
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-book-reader business-text-icon'></i>
+                                교육
+                                <i class='bx bxs-chevron-right business-text-icon-arrow'></i>
+                            </li>
+                            <li>
+                                <i class='bx bx-party bx-tada business-text-icon'></i>
+                                그랜드 오픈
+                            </li>
+                        </ol>
+                        <a href="business.html" class="store-business-button">창업안내 더보기</a>
                     </div>
-                </div>
-                <div class="store" onclick="location.href='store.html'">
-                    <div class="store-img"></div>
-                    <div class="store-text flex-col">
-                        <h3>우수가맹점</h3>
-                        <h2 class="point">ㅁㅁ점</h2>
-                        <p>경기도 안산시 단원구 와동1로 47-1</p>
-                        <p>TEL : 00-000-0000</p>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
-        <span class="content-back-pattern-top"></span>
-        <span class="content-back-pattern-bottom"></span>
     </main>
+
     <footer>
         <div class="footer-box wrap">
             <h1><img src="img/foot_logo.png" alt="foot_logo"></h1>
-            <p class="footer-txt small">주소 : 서울시 동대문구 장한로 37 2~3층<br>사업자등록번호 : 220-87-13681<br>TEL : 1588-6020 | FAX :
+            <p class="footer-txt">주소 : 서울시 동대문구 장한로 37 2~3층<br>사업자등록번호 : 220-87-13681<br>TEL : 1588-6020 | FAX :
                 02-466-9200<br>copyright 2005 ⓒ HAPPY BRIDGE ALL RIGHTS RESERVED</p>
             <p class="footer-sns">
                 <i class='bx bxl-facebook'></i>
@@ -142,6 +201,10 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

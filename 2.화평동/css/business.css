@@ -1,43 +1,97 @@
-
-/*
-    ------------------business START----------------------
-*/
-
-/*창업비용*/
-.business-table {
+.business-box {
     width: 100%;
-    height: 600px;
+}
+
+
+/*cost 창업비용*/
+#cost {
+    padding-top: 150px;
+}
+
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
-    padding: 1em;
+    background: linear-gradient(to top, #e1e1e1 0%, #f0f0f0 100%);
     text-align: center;
-    word-break: keep-all;
-    background: linear-gradient(to top, #d5d4d0 0%, #e9e9e7 100%);
-    border-radius: 10px;
-    border-collapse: collapse;
-    border: none;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 2px 2px 3px #aaa;
 }
 
-.business-table thead tr {
-    border-bottom: 1px dashed gray;
+/* .table::before{
+    content: "";
+    position: relative;
+    top: -15px;
+    display: block;
+    width: 80vw;
+    max-width: 1500px;
+    height: 33px;
+    background-image: radial-gradient(
+        transparent 50%,
+        #e9e9e7 50%
+    );
+    background-size: 33px;
+    background-repeat: repeat-x;
+    background-position-x: -2px;
+    background-position-y: -18px;
+    box-shadow: 2px 2px 3px #aaa;
+    z-index: -1;
+} */
+
+
+.table .dot {
+    position: relative;
+    top: -15px;
+    left: -20px;
+    display: block;
+    width: 80vw;
+    max-width: 1500px;
+    height: 33px;
+    background-image: radial-gradient(transparent 50%,
+            #f0f0f0 50%);
+    background-size: 33px;
+    background-repeat: repeat-x;
+    background-position-x: 0;
+    background-position-y: -18px;
+    /* box-shadow: 2px 2px 3px #aaa; */
+    /* z-index: 0; */
 }
 
-.business-table tfoot tr {
-    font-weight: 600;
-    border-top: 1px dashed gray;
+.table .row {
+    display: table-row;
 }
 
-.business-table thead tr td,
-.business-table tfoot tr td {
-    font-size: 1.1em;
-    letter-spacing: 1px;
+.table .td {
+    display: table-cell;
+    padding: 20px 5px;
 }
 
-.business-table td {
-    padding: 1em;
+.td-1,
+.td-3 {
+    width: 30%;
 }
 
+.td-2 {
+    width: 40%;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #aaa;
+}
+
+.border-top {
+    border-top: 1px solid #aaa;
+}
 
 /*창업절차*/
+#process {
+    height: fit-content;
+}
+
 .process-list-box {
     display: flex;
     flex-wrap: wrap;
@@ -48,47 +102,52 @@
 }
 
 .process-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    display: block;
     width: 200px;
     height: 200px;
+    padding: 20px;
     margin: 20px;
     margin-right: 50px;
-    padding-top: 100px;
     background: linear-gradient(to top, #d5d4d0 0%, #fff 100%);
     box-shadow: 2px 2px 3px #aaa;
     border-radius: 50%;
     text-align: center;
+    line-height: 1;
 }
 
 .process-list img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     display: block;
-    top: 25px;
-    width: 30%;
-    margin: auto;
+    width: auto;
+    height: 45%;
+}
+
+.process-list p {
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2em;
 }
 
 .process-list .bx-right-arrow-alt {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -25.5%;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 1em;
+    height: 2em;
     margin: auto;
-    font-size: 50px;
+    font-size: 2em;
+    line-height: 2em;
     color: #aaa;
-    transform: translateX(270%);
 }
 
 /*창업문의*/
-#business-ask form {
+
+#inquiry form {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -162,14 +221,14 @@
     position: relative;
     display: block;
     width: 300px;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right, #ed6c37 0%, #f7b100 51%, #ed6c37 100%);
-    background-size: 150%;
-    background-position-x: 180%;
+    background-image: linear-gradient(120deg, var(--orange) 0%, var(--yellow) 100%);
+    background-size: 130%;
+    background-position-x: 0%;
     margin: auto;
+    margin-top: 10px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -177,123 +236,90 @@
 }
 
 .button:hover {
-    background-position-x: -50%;
+    background-position-x: 100%;
 }
-
-/*
-    ------------------business END----------------------
-*/
 
 
 /*
-    ------------------media query START----------------------
+    반응형 mediaQuery
+    1360
+    1200
+    945
+    768
 */
 
-@media (max-width:1300px) {
-}
+@media (max-width: 945px){
 
-@media (max-width:1200px) {
-}
-
-@media (max-width:1080px) {
-}
-
-@media (max-width:1024px) {
-
-}
-
-@media (max-width:850px) {
-    /*slide nav 사용*/
-}
-
-@media (max-width:768px) {
-    /*media query business*/
-    .process-list {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 20vh;
-        padding: 0;
-        margin: 0;
-        border-radius: 20px;
-        line-height: 20vh;
-    }
-
-    .process-list:not(last-child) {
-        margin-bottom: 3em;
-    }
-
-    .process-list img {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 20%;
-        height: 100%;
-        margin: 0 2em;
-        object-fit: contain;
-        max-width: 80px;
-    }
-
-    .process-list span {
-        display: block;
-        width: 50%;
-        margin: 0;
-        text-align: left;
-    }
-
-    .process-list .bx-right-arrow-alt {
-        transform: translate(0, 13.2vh) rotate(90deg);
-    }
-
-    #business-ask {
-        height: 60vh;
-    }
-
-    #business-ask form {
-        height: 100%;
+    #inquiry form {
+        height: auto;
     }
 
     .form-left {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .form-left label {
-        width: 22%;
-        text-align: center;
+        width: 70px;
     }
 
     .form-left input,
     .form-left select {
-        width: 78%;
+        width: calc(100% - 70px);
     }
 
     .form-right {
         width: 100%;
+        margin-bottom: 30px;
     }
 }
 
-@media (max-width:650px) {
-    /*media query business*/
-    .table-total {
+
+@media (max-width:768px) {
+    .bx-menu {
+        display: block !important;
+        color: #000;
+    }
+
+    .td-detail {
+        line-height: 1.8em !important;
+        letter-spacing: -1px;
+    }
+
+    .process-list {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:480px){
+    .process-list{
+        width: 180px;
+        height: 180px;
+    }
+
+    .process-list .bx-right-arrow-alt{
+        top: -123%;
+        left: 0; right: 0;
+        transform: rotate(90deg);
+    }
+
+    .form-left{
+        height: fit-content;
+    }
+
+    .form-left .form-detail{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .form-left label{
+        width: 100%;
         text-align: center;
     }
+
+    .form-left input, .form-left select{
+        width: 100%;
+    }
 }
-
-@media (max-width:500px) {
-}
-
-/*
-    ------------------media query END----------------------
-*/
-
-
-/*media query 공통부분*/
-/*media query index*/
-/*media query brand*/
-/*media query menu*/
-/*media query store*/
-/*media query business*/

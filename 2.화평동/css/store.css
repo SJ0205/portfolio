@@ -1,58 +1,55 @@
 
-/*
-    ------------------store START----------------------
-*/
+#store{
+    padding: 150px 0;
+}
+
+.store-search{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
 
 /*serach*/
-.store-search {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-    min-width: 360px;
-    height: 40px;
-    margin-left: auto;
-    margin-bottom: 1em;
-}
-
-.store-search select {
-    width: 38%;
+.store-search select{
+    width: 150px;
     height: 100%;
     padding: 5px;
+    margin-left: auto;
+    margin-right: 10px;
     border: none;
 }
 
-.store-search button {
-    width: 60%;
+.store-search button{
+    width: 100px;
     height: 100%;
     border: none;
-    background: linear-gradient(to right, #ed6c37 0%, #f7b100 51%, #ed6c37 100%);
-    background-size: 150%;
-    background-position-x: 180%;
+    background-image: linear-gradient(120deg, var(--orange) 0%, var(--yellow) 100%);
+    background-size: 130%;
+    background-position-x: 0%;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
-.store-search button:hover {
-    background-position-x: -50%;
+.store-search button:hover{
+    background-position-x: 100%;
 }
 
 /*map*/
-.store-map {
+.store-map{
     display: flex;
-    height: 500px;
+    height: 450px;
 }
 
-.map {
+.map{
     width: 60%;
     height: 100%;
 }
 
 /*store-list*/
-.map-sub {
+.map-sub{
     width: 40%;
     min-width: 400px;
     height: 100%;
@@ -61,112 +58,91 @@
     overflow-y: scroll;
 }
 
-.map-sub h2 {
+.map-sub h2{
     letter-spacing: -2px;
     margin-bottom: 10px;
 }
 
-.store-list {
+.store-list{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    height: 180px;
+    height: 150px;
     padding: 10px;
     padding-left: 0;
 }
 
-.store-list img {
-    width: 40%;
+.store-list img{
+    width: auto;
     height: 100%;
     margin-right: 15px;
-    object-fit: contain;
 }
 
-.store-list-text {
-    width: 60%;
+.store-list-text{
+    width: 70%;
     line-height: 1.8em;
 }
 
-/*
-    ------------------store END----------------------
-*/
-
-
-/*
-    ------------------media query START----------------------
-*/
-
-@media (max-width:1300px) {
-}
-
-@media (max-width:1200px) {
-}
-
-@media (max-width:1080px) {
-}
-
-@media (max-width:1024px) {
-}
-
-@media (max-width:850px) {
-    /*slide nav 사용*/
-    /*media query store*/
-    .store-search {
+@media (max-width:1300px){
+    .store-list{
+        flex-flow: column;
+        height: auto;
+    }
+    .store-list img{
+        height: 70%;
+        margin-right: 0;
+    }
+    .store-list-text{
         width: 100%;
+        margin-top: 5px;
     }
 
-    .store-search select {
-        width: 59%;
-        text-align: center;
+}
+
+@media (max-width:950px){
+    .store-search{
+        align-items: center;
+        justify-content: center;
     }
 
-    .store-search button {
-        width: 40%;
+    .store-search select{
+        margin-left: 0;
     }
 
-    .store-map {
-        position: relative;
-        height: 100vh;
+    .store-map{
+        flex-flow: column;
+        height: 90vh;
     }
-
-    .map {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: 48%;
-    }
-
-    .map-sub {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+    .map{
         width: 100%;
         height: 50%;
     }
+    .map-sub{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .store-list{
+        flex-flow: row;
+    }
+    .store-list img{
+        height: 70%;
+        margin-right: 15px;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width:750px){
+    .bx-menu{
+        display: block !important;
+        color:#000;
+    }
 }
 
-@media (max-width:650px) {
+@media (max-width:550px){
+    .store-list{
+        flex-flow: column;
+    }
+    .store-list img{
+        margin-right: 0;
+    }
 }
-
-@media (max-width:500px) {
-}
-
-/*
-    ------------------media query END----------------------
-*/
-
-
-/*media query 공통부분*/
-/*media query index*/
-/*media query brand*/
-/*media query menu*/
-/*media query store*/
-/*media query business*/
